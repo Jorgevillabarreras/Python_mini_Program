@@ -1,3 +1,5 @@
+#!/bin/python3
+
 age_user = input("What is your current age? ")
 
 age = int(age_user) 
