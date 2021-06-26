@@ -1,11 +1,10 @@
 #!/bin/python3
 
-age_user = input("What is your current age? ")
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
 
-age = int(age_user) 
-years = 90 - age
-days = years * 365
-weeks = years * 52
-month = years * 12
+height1 = float(height)
+weight1 = float(weight)
+bmi = weight1 / height1 ** 2
 
-print(f"You have {days} days, {weeks} weeks, and {month} months left.")
+print(int(bmi))
