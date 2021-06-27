@@ -1,0 +1,13 @@
+#!/bin/python
+
+# Call rondom module
+import random
+
+# Creat random number
+dice = random.randint(1,2)
+
+# compare and print
+if dice == 1:
+  print('Heads')
+elif dice == 2:
+  print('Tails')
