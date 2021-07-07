@@ -6,11 +6,11 @@ shift = int(input("Type the shift number:\n"))
 
 def ceasar(message, move, directions):
     cipher = ''
+    if directions == 'decode':
+            test = move * -1
     for letter in message:
         position = alphabet.index(letter)
-        if directions == 'decode':
-            move *= -1
-        new_position = position + move
+        new_position = position + test
         cipher += alphabet[new_position]
     print(f'The {directions}d is {cipher}')
 
